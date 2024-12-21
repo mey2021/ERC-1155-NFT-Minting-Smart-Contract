@@ -17,7 +17,7 @@ contract Pokemon is ERC1155, Ownable{
     ERC1155(_uri){
         name = _name;
         symbol = _symbol;
-    }
+    } 
     
     
        function setURI(string memory newuri) public onlyOwner {
