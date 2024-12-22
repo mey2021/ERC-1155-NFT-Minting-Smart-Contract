@@ -11,7 +11,7 @@ contract Pokemon is ERC1155, Ownable{
     uint256 public mintFee = 0.02 ether;
     uint256[] totalSupply = [20,30,50]; //total supply of all 3 types of NFTs
     uint256[] mintedSupply = [0,0,0];   // to track minted nfts
-    uint256[] mintPrices = [0.03 ether, 0.06 ether, 0.08 ether]; // mint price for each nft
+    uint256[] mintPrices = [0 ether, 0 ether, 0 ether]; // mint price for each nft
 
     constructor(string memory _uri, string memory _name, string memory _symbol) 
     ERC1155(_uri){
